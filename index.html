@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <img src="logo.jpg" draggable="false" alt="Spotify" id="logo">
+        </div>
+        <h1>Abhimanyu's Favs</h1>
+        <div class="profile">
+            <a href="https://open.spotify.com/user/26o108iwuvey9ixhviyh1bezd">
+                <img src="pfp.jpg" draggable="false" alt="Abhimanyu's Profile" id="pfp">
+            </a>
+        </div>
+        
+    </header>
+
+    <div class="overlay">
+        <img src="pp.png" id="playpause" alt="">
+    </div>
+    <div class="playback">
+        
+        <div class="sideways">
+            <img id="albumart" src="pics/song1.jpg" draggable="false" alt="Album Art">
+            <div class="topdown">
+                <h3>Daya</h3>
+                <h2>Montana</h2>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="snackbar">Click anywhere on the screen to play or pause the song.</div>
+
+    <footer class="footer">
+        <div class="layer1">
+            <img id="previcon" src="previouswt.png" draggable="false" alt="Previous">
+            <input type="range" id="progressBar" min="0" max="100" value="0" step="0.0000000001">
+            <img id="nexticon" src="nextwt.png" draggable="false" alt="Next">
+        </div>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+

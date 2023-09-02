@@ -1,0 +1,241 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 100px;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+    padding-left: 15px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -75px;
+}
+
+#pfp {
+    width: 55px;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+#progressBar {
+    width: 50vw;
+}
+
+
+.footer {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+    flex-direction: row-reverse;
+}
+
+#previcon,
+#nexticon {
+    width: 36px;
+}
+
+.layer1 {
+    display: flex;
+    gap: 150px;
+
+}
+
+.playback {
+    display: flex;
+    height: 90.75vh;
+    background-image: url('pics/songbg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column-reverse;
+    padding-left: 50px;
+    transition: background-image 0.3s ease-in-out;
+    background-position: center;
+}
+
+h2 {
+    font-size: 52px;
+}
+
+
+h3 {
+    font-size: 30px;
+    color: rgb(234, 231, 227, 0.7);
+}
+
+#albumart {
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 100px;
+    object-fit: cover;
+
+}
+
+.sideways {
+    display: flex;
+}
+
+.topdown {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 100px;
+    padding-left: 25px;
+}
+
+.overlay img {
+    z-index: 99999;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    height: 83.5vh;
+}
+
+
+
+
+
+#snackbar {
+    visibility: hidden; 
+    margin-left: -250px;     
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 10px; 
+    padding: 16px 26px;
+    position: fixed; 
+    z-index: 999999999; 
+    left: 50%; 
+    bottom: 100px; 
+  }
+  
+  #snackbar.show {
+    visibility: visible; 
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 100px; opacity: 1;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 100px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+
+
+
+@media (max-width: 1120px),
+(max-height: 867px) {
+    body {
+        font-size: 16px;
+
+    }
+
+    .header {
+        height: 80px;
+
+    }
+
+    #logo {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-left: -5px;
+    }
+
+    #pfp {
+        width: 40px;
+    }
+
+    .layer1 {
+        gap: 50px;
+    }
+
+    .playback {
+        height: 90vh;
+        padding-left: 20px;
+        background-position: center;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    #albumart {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 100px;
+    }
+
+    .sideways {
+        display: flex;
+    }
+
+    .topdown {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 100px;
+        padding-left: 25px;
+    }
+
+
+
+    .overlay img {
+        height: 80vh;
+    }
+}
+
+@media(max-height: 700px)
+{
+    .overlay img {
+        height: 75vh;
+    }
+}
+
+@media(max-width: 500px)
+{
+    #logo {
+        width: 0px;
+    }
+}
